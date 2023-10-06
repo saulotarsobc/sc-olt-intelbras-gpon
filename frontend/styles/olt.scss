@@ -1,5 +1,5 @@
 #olt_wrap {
-  background-color: aqua;
+  // background-color: aqua;
   padding: 10px;
   width: 100%;
   color: #ffffff;
@@ -44,6 +44,16 @@
           background-color: #3a3a3a;
           width: 23px;
           height: 16px;
+          transition: .2s ease-in-out;
+          border: 1px solid #3a3a3a;
+
+          &:hover {
+            background-color: #22ff6c;
+          }
+        }
+
+        .selected {
+          background-color: #22ff6c;
         }
       }
     }
@@ -51,7 +61,7 @@
     .margin {
       margin: 0 15px;
     }
-    
+
     .margin2 {
       margin: 0 2px;
     }

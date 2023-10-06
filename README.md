@@ -1,6 +1,6 @@
 # SC OLT Intelbras 8820i
 
-![foto frontal da olt intelbras 8820i](./img/image-1.png)
+![foto frontal da olt intelbras 8820i](./img/image-2.png)
 
 ## OID's
 
