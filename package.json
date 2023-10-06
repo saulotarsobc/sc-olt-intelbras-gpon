@@ -1,0 +1,70 @@
+{
+  "name": "electron-typescript-next",
+  "version": "1.0.5",
+  "main": "main/index.js",
+  "icon": "build/icon.png",
+  "description": "Aplicação ElectronJS com NextJS e typescript",
+  "private": true,
+  "author": {
+    "name": "Saulo Costa",
+    "email": "saulotarsobc@gmail.com",
+    "url": "https://github.com/saulotarsobc/electron-next-ts"
+  },
+  "scripts": {
+    "dev": "npm run build-electron && electron .",
+    "clean": "rimraf dist main frontend/out frontend/.next",
+    "build-frontend": "next build frontend",
+    "build-electron": "tsc -p backend",
+    "build": "npm run build-frontend && npm run build-electron",
+    "pack-app": "npm run build-frontend && npm run build-electron && npm run build && electron-builder --dir",
+    "dist": "npm run clean && npm run build && electron-builder",
+    "type-check": "tsc -p ./frontend/tsconfig.json && tsc -p ./backend/tsconfig.json",
+    "publish": "electron-builder --win -p always",
+    "publish-linux": "electron-builder --linux -p always",
+    "postinstall": "electron-builder install-app-deps",
+    "release": "electron-builder"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "electron-is-dev": "^2.0.0",
+    "electron-next": "^3.1.5",
+    "electron-store": "^8.1.0",
+    "esbuild": "^0.19.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sequelize": "^6.33.0",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.6",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@types/sequelize": "^4.28.15",
+    "electron": "^26.2.0",
+    "electron-builder": "^24.6.3",
+    "next": "^13.4.19",
+    "rimraf": "^5.0.1"
+  },
+  "build": {
+    "productName": "SC - Electron Typescript Next",
+    "appId": "electron-typescript-next",
+    "win": {
+      "publish": [
+        "github"
+      ],
+      "publisherName": "Saulo INC",
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "asar": true,
+    "files": [
+      "main",
+      "frontend/out"
+    ]
+  }
+}
