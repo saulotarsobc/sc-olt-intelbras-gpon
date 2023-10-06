@@ -11,7 +11,7 @@
     "url": "https://github.com/saulotarsobc/sc-olt-intelbras-8820i"
   },
   "scripts": {
-    "dev": "npm run build-electron && electron .",
+    "start": "npm run build-electron && electron .",
     "clean": "rimraf dist main frontend/out frontend/.next",
     "build-frontend": "next build frontend",
     "build-electron": "tsc -p backend",
@@ -33,7 +33,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sequelize": "^6.33.0",
-    "sqlite3": "^5.1.6"
+    "snmp-native": "^1.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.5.6",
@@ -43,7 +43,8 @@
     "electron": "^26.2.0",
     "electron-builder": "^24.6.3",
     "next": "^13.4.19",
-    "rimraf": "^5.0.1"
+    "rimraf": "^5.0.1",
+    "sass": "^1.69.0"
   },
   "build": {
     "productName": "SC OLT Intelbras 8820i",

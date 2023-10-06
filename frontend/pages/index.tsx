@@ -1,27 +1,18 @@
-import { useState } from "react";
-
 export default function Index() {
-  const [Users, setUsers] = useState([]);
-
   return (
     <>
-      <h1>Home</h1>
-
-      <button
-        onClick={async () => {
-          const data = await global.api.db.createUser({
-            firstName: "Saulo",
-            lastName: "Costa",
-          });
-          setUsers(data);
-        }}
-      >
-        Criar user
-      </button>
-
-      <hr />
-      <pre>{JSON.stringify(Users, null, 4)}</pre>
-      <hr />
+      <div id="olt_wrap">
+        <div id="olt">
+          <div className="g_type_1">
+            <span>RS232</span>
+            <div className="ports">
+              <div id="serial">{/* serial */}</div>
+              <div id="gerencia">{/* gerencia */}</div>
+            </div>
+            <span>GER</span>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

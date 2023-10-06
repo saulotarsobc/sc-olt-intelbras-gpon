@@ -7,9 +7,8 @@ import isDev from "electron-is-dev";
 import prepareNext from "electron-next";
 
 // Modules
-import { BrowserWindow, app, ipcMain, IpcMainEvent, dialog } from "electron";
+import { BrowserWindow, app, ipcMain, IpcMainEvent } from "electron";
 import { getWinSettings, setWinSettings } from "./store";
-import { User } from "./models";
 
 const createWindow = () => {
 	const winSize = getWinSettings();
@@ -57,21 +56,6 @@ app.on("ready", async () => {
 app.on("window-all-closed", app.quit);
 
 /* ++++++++++ code ++++++++++ */
-ipcMain.on("chooseFiles", (event: IpcMainEvent) => {
-	dialog.showOpenDialog({ properties: ["openFile", "multiSelections"] })
-		.then((result: any) => {
-			event.returnValue = result;
-		}).catch((err: Error) => {
-			event.returnValue = err.message;
-		});
-});
-
-ipcMain.on("createUser", (event: IpcMainEvent, data: {}) => {
-	User.create({ ...data })
-		.then((data: any) => {
-			event.returnValue = data;
-		})
-		.catch((e: Error) => {
-			event.returnValue = e.message;
-		})
+ipcMain.on("createUser", async (event: IpcMainEvent, _data: {}) => {
+	event.returnValue = 'data';
 });
