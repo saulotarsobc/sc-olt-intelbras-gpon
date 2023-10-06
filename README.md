@@ -1,5 +1,7 @@
 # SC OLT Intelbras 8820i
 
+![equema](img/sc-olt-intelbras-8820i.drawio.svg)
+
 ![foto frontal da olt intelbras 8820i](./img/image-2.png)
 
 ## OID's
