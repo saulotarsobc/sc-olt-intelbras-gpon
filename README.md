@@ -35,13 +35,7 @@
 | OnuTraps                   | .1.3.6.1.4.1.26138.1.2.2                | Traps das ONUs                                                                                                                     |
 | onuDown                    | .1.3.6.1.4.1.26138.1.2.2.1              | Trap que indica que a ONU está down.                                                                                               |
 | onuUp                      | .1.3.6.1.4.1.26138.1.2.2.2              | Trap que indica que a ONU está ativa.                                                                                              |
-| portStatsActiveOnus        | .1.3.6.1.4.1.26138.1.4.1.1.1.55         | Apresenta a quantidade de CPE’s ativas na interface PON... Exemplo :
-.1.3.6.1.4.1.26138
-.1.4.1.1.1.55.9 =
-GPON 1
-.1.3.6.1.4.1.26138
-.1.4.1.1.1.55.16 =
-GPON 8
+| portStatsActiveOnus        | .1.3.6.1.4.1.26138.1.4.1.1.1.55         | Apresenta a quantidade de CPE’s ativas na interface PON. Exemplo : .1.3.6.1.4.1.26138.1.4.1.1.1.55.9 = GPON 1 e .1.3.6.1.4.1.26138.1.4.1.1.1.55.16 = GPON 8
 
 | portStatsConfiguredOnus    | .1.3.6.1.4.1.26138.1.4.1.1.1.56         | Apresenta a quantidade de CPE’s configuradas na interface PON... Exemplos fornecidos no texto.                                     |
 
