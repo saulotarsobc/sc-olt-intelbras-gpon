@@ -17,7 +17,7 @@ const createWindow = () => {
 		height: winSize.h,
 		width: winSize.w,
 		minHeight: 500,
-		minWidth: 400,
+		minWidth: 790,
 		webPreferences: {
 			nodeIntegration: false,
 			contextIsolation: false,
