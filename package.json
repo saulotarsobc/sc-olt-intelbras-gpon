@@ -1,14 +1,14 @@
 {
-  "name": "electron-typescript-next",
+  "name": "sc-intelbras-8820i",
   "version": "1.0.5",
   "main": "main/index.js",
   "icon": "build/icon.png",
-  "description": "Aplicação ElectronJS com NextJS e typescript",
+  "description": "Aplicação ElectronJS com NextJS e typescript para a OLT Intelbras 8820i",
   "private": true,
   "author": {
     "name": "Saulo Costa",
     "email": "saulotarsobc@gmail.com",
-    "url": "https://github.com/saulotarsobc/electron-next-ts"
+    "url": "https://github.com/saulotarsobc/sc-olt-intelbras-8820i"
   },
   "scripts": {
     "dev": "npm run build-electron && electron .",
@@ -46,8 +46,8 @@
     "rimraf": "^5.0.1"
   },
   "build": {
-    "productName": "SC - Electron Typescript Next",
-    "appId": "electron-typescript-next",
+    "productName": "SC OLT Intelbras 8820i",
+    "appId": "sc-olt-intelbras-8820i",
     "win": {
       "publish": [
         "github"

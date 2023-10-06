@@ -6,7 +6,7 @@
 
 ### Monitoramento geral
 
-| Descrição                         | OID                               | Retorno |
+| Descrição                         | OID                               | Retorno                              |
 |-----------------------------------|-----------------------------------|--------------------------------------|
 | cpuUsage                          | 1.3.6.1.4.1.2021.11.9.0           | Porcentagem de Uso do CPU |
 | memTotal                          | 1.3.6.1.4.1.2021.4.5.0            | Memória RAM total em KBytes |
