@@ -9,6 +9,7 @@ import prepareNext from "electron-next";
 // Modules
 import { BrowserWindow, app, ipcMain, IpcMainEvent } from "electron";
 import { getWinSettings, setWinSettings } from "./store";
+import { snmpGet } from "./snmp";
 
 const createWindow = () => {
 	const winSize = getWinSettings();
@@ -16,8 +17,8 @@ const createWindow = () => {
 	const mainWindow = new BrowserWindow({
 		height: winSize.h,
 		width: winSize.w,
-		minHeight: 500,
-		minWidth: 790,
+		minHeight: 700,
+		minWidth: 1000,
 		webPreferences: {
 			nodeIntegration: false,
 			contextIsolation: false,
@@ -29,7 +30,7 @@ const createWindow = () => {
 		setWinSettings(mainWindow.getSize());
 	});
 
-	mainWindow.setMenu(null);
+	// mainWindow.setMenu(null);
 
 	// open devtools
 	// abre o devtools se estiver em modo de desenvolvimento
@@ -56,6 +57,8 @@ app.on("ready", async () => {
 app.on("window-all-closed", app.quit);
 
 /* ++++++++++ code ++++++++++ */
-ipcMain.on("createUser", async (event: IpcMainEvent, _data: {}) => {
-	event.returnValue = 'data';
+ipcMain.on("snmpGet", async (event: IpcMainEvent, args: string) => {
+	const res = await snmpGet(args);
+	console.log({ args, res });
+	event.returnValue = res;
 });
