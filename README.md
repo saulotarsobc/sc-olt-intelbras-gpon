@@ -6,6 +6,10 @@
 
 ![foto frontal da olt intelbras 8820i](./img/image-2.png)
 
+## Help
+
+-[Site - OLT 8 portas GPON](https://www.intelbras.com/pt-br/olt-8-portas-gpon-olt-8820-i)
+
 ## OID's
 
 ### Monitoramento geral
