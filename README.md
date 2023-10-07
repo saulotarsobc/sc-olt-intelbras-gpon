@@ -4,11 +4,11 @@
 
 ## Help
 
+![equema](img/sc-olt-intelbras-8820i.drawio.svg)
+
 -[Site - OLT 8 portas GPON](https://www.intelbras.com/pt-br/olt-8-portas-gpon-olt-8820-i)
 
 ![image](https://github.com/saulotarsobc/sc-olt-intelbras-8820i/assets/23584038/86af441d-9346-4791-a049-9f8a519d7ce6)
-
-![equema](img/sc-olt-intelbras-8820i.drawio.svg)
 
 ## OID's
 
