@@ -1,4 +1,4 @@
-#! bash
+#! /usr/bin/bash
 echo -e "\033[33m\n\n=====> git status -s\n\033[0m"
 git status -s;
 
