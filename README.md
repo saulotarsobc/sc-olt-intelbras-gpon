@@ -6,7 +6,7 @@
 
 ___
 
-![image](https://github.com/saulotarsobc/sc-olt-intelbras-8820i/assets/23584038/86af441d-9346-4791-a049-9f8a519d7ce6)
+![figma front](https://github.com/saulotarsobc/sc-olt-intelbras-8820i/assets/23584038/86af441d-9346-4791-a049-9f8a519d7ce6)
 
 ___
 
