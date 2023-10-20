@@ -1,4 +1,9 @@
 version: "3.3"
+
+networks:
+  intelbras:
+    driver: bridge
+
 services:
   api:
     container_name: api
@@ -6,3 +11,5 @@ services:
       context: ./api
     ports:
       - "3000:3000"
+    networks:
+      - intelbras
