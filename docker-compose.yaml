@@ -1,4 +1,4 @@
-version: "3.3"
+version: "3.9"
 
 networks:
   intelbras:
@@ -10,6 +10,14 @@ services:
     build:
       context: ./api
     ports:
-      - "3000:3000"
+    - "3000:3000"
     networks:
-      - intelbras
+    - intelbras
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend
+    ports:
+    - "4000:3000"
+    networks:
+    - intelbras
