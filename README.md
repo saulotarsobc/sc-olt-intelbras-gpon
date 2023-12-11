@@ -1,4 +1,4 @@
-# SC OLT Intelbras 8820i
+# SC OLT Intelbras G8/G16
 
 > EM CONSTRUÇÃO 🏗️🔥
 
